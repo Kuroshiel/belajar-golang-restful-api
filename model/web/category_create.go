@@ -3,5 +3,5 @@ package web
 // Category Service Golang RESTful API
 
 type CategoryCreateRequest struct {
-	Name string
+	Name string `validate:"required, max = 200, min = 1"`
 }
