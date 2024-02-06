@@ -3,6 +3,6 @@ package web
 // Category Service Golang RESTful API
 
 type CategoryUpdateRequest struct {
-	Id   int    `validate:"required"`
-	Name string `validate:"required, max = 200, min = 1"`
+	Id   int    `validate:"required" json:"id"`
+	Name string `validate:"required,max=200,min=1" json:"name"`
 }
